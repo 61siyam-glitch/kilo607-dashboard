@@ -39,7 +39,3 @@ cursor.executemany('INSERT OR IGNORE INTO BOQ_Items VALUES (?, ?, ?, ?, ?, ?)', 
 conn.commit()
 conn.close()
 print("✅ تم إنشاء قاعدة البيانات الشاملة (103 تقارير + الجداول المالية) بنجاح!")
-
-# تحميل الملف تلقائياً
-from google.colab import files
-files.download('Project_607_DB.sqlite')
